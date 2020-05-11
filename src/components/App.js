@@ -23,7 +23,6 @@ export default class App extends React.Component {
       },
     });
     const index = Math.floor(Math.random() * this.state.videos.length);
-    console.log(index);
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[index],
