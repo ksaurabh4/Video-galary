@@ -22,6 +22,8 @@ export default class App extends React.Component {
         key: `${KEY}`,
       },
     });
+
+    console.log(response);
     const index = Math.floor(Math.random() * this.state.videos.length);
     this.setState({
       videos: response.data.items,

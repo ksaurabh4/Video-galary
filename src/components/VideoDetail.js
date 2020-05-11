@@ -12,6 +12,7 @@ const VideoDetail = ({ video }) => {
       </div>
       <div className='ui segment'>
         <h4>{video.snippet.title}</h4>
+        <p>{`${new Date(video.snippet.publishedAt)}`}</p>
         <p>{video.snippet.description}</p>
       </div>
     </div>
