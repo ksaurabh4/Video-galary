@@ -14,8 +14,7 @@ export default class App extends React.Component {
   }
 
   onTermSubmit = async (term) => {
-    const KEY = process.env.YOUTUBE_KEY;
-    console.log(process)
+    const KEY = 'AIzaSyDaWHTPDe97j44Qtac-75lDeyhakrmTTww';
     const response = await youtube.get('/search', {
       params: {
         q: term,
